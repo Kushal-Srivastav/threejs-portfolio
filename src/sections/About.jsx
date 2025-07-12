@@ -33,7 +33,13 @@ const About = () => {
 
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
+            <div className="relative w-full sm:h-[276px] h-fit flex items-center justify-center">
+              <img 
+                src="assets/tech_stack.avif" 
+                alt="Tech Stack" 
+                className="w-full h-full object-contain" 
+              />
+            </div>
 
             <div>
               <p className="grid-headtext">Tech Stack</p>
