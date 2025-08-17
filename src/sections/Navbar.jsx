@@ -1,6 +1,6 @@
 import { useState } from 'react';
-
 import { navLinks } from '../constants/index.js';
+import { FaDownload } from 'react-icons/fa';
 
 const NavItems = ({ onClick = () => {} }) => (
   <ul className="nav-ul">
@@ -35,8 +35,16 @@ const Navbar = () => {
             <img src={isOpen ? 'assets/close.svg' : 'assets/menu.svg'} alt="toggle" className="w-6 h-6" />
           </button>
 
-          <nav className="sm:flex hidden">
+          <nav className="sm:flex hidden items-center">
             <NavItems />
+            <a 
+              href="/Resume_2025.pdf" 
+              download 
+              className="ml-6 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md flex items-center gap-2 transition-colors"
+            >
+              <FaDownload className="text-sm" />
+              Resume
+            </a>
           </nav>
         </div>
       </div>
@@ -44,6 +52,15 @@ const Navbar = () => {
       <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
         <nav className="p-5">
           <NavItems onClick={closeMenu} />
+          <a 
+            href="/Resume_2025.pdf" 
+            download 
+            className="mt-4 block w-full text-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md flex items-center justify-center gap-2 transition-colors"
+            onClick={closeMenu}
+          >
+            <FaDownload className="text-sm" />
+            Download Resume
+          </a>
         </nav>
       </div>
     </header>
