@@ -20,12 +20,16 @@ const About = () => {
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img 
+              src="/formal.jpg" 
+              alt="Kushal Srivastava" 
+              className="w-full sm:h-[276px] h-fit object-cover rounded-lg" 
+            />
 
             <div>
-              <p className="grid-headtext">Hi, I’m Kushal Srivastava</p>
+              <p className="grid-headtext">Hi, I'm Kushal Srivastava</p>
               <p className="grid-subtext">
-                As a Next.js full stack web developer, I create modern, scalable, and engaging digital experiences.
+                I'm a passionate Next.js full stack web developer with a keen eye for detail, dedicated to crafting modern, scalable, and engaging digital experiences that exceed expectations.
               </p>
             </div>
           </div>
